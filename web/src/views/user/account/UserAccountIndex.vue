@@ -1,5 +1,5 @@
 <template>
-    <div class="box">
+    <div class="box" v-if="!$store.state.user.pulling_info" >
         <!-- 滑动盒子 -->
         <div class="pre-box" :style="preBoxStyles">
             <h1>WELCOME</h1>
@@ -17,11 +17,14 @@
             <div class="input-box">
                 <input v-model="registerForm.username" type="text" placeholder="用户名">
                 <input v-model="registerForm.password" type="password" placeholder="密码">
-                <input v-model="registerForm.repassword" type="password" placeholder="确认密码">
+                <input v-model="registerForm.confirmedPassword" type="password" placeholder="确认密码">
             </div>
             <div class="btn-box">
-                <button @click="handleRegister">注册</button>
+                <button @click="register">注册</button>
                 <p @click="toggleForm">已有账号?去登录</p>
+            </div>
+            <div v-if="error_message" class="error-message">{{ error_message }}</div>
+            <div>
             </div>
         </div>
 
@@ -38,14 +41,18 @@
                 <button @click="login">登录</button>
                 <p @click="toggleForm">没有账号?去注册</p>
             </div>
+            <div v-if="error_message" class="error-message">{{ error_message }}</div>
         </div>
     </div>
 </template>
 
 <script>
 import { useStore } from 'vuex'
-import { ref, reactive, computed, onMounted, onBeforeUnmount } from 'vue'
+import { ref, reactive, computed } from 'vue'
 import { useRouter } from 'vue-router'
+//import router from '../../../router/index'
+import $ from 'jquery'
+
 
 export default {
     name: 'LoginPage',
@@ -62,27 +69,72 @@ export default {
         const registerForm = reactive({
             username: '',
             password: '',
-            repassword: ''
+            confirmedPassword: ''
         })
         const error_message = ref('')
-        const userAccounts = ref(JSON.parse(localStorage.getItem('userAccounts')) || [])
-        const bubbleInterval = ref(null)
+
+        const jwt_token = localStorage.getItem("jwt_token");
+
+        if(jwt_token){
+            store.commit("updateToken",jwt_token);
+            store.dispatch("getinfo",{
+                success () {
+                    router.push({name:"home"});
+                    store.commit("updatePullingInfo",false);
+                },
+                error () {
+                    store.commit("updatePullingInfo",false);
+                }
+            })
+        } else {
+            store.commit("updatePullingInfo",false);
+        }
+
+
+        //const bubbleInterval = ref(null)
 
         const login = () => {
             error_message.value = '' // 清空错误信息
-            
+
             store.dispatch("login", {
                 username: loginForm.username,
                 password: loginForm.password,
-                success: (resp) => {
-                    console.log('登录成功:', resp)
-                    router.push('/') // 登录成功跳转
+                success: () => {
+                    //console.log('登录成功:', resp)
+                    store.dispatch("getinfo", {
+                        success() {
+                            router.push({ name: 'home' }) // 登录成功跳转
+                            console.log(store.state.user);
+                        }
+                    })
                 },
                 error: (err) => {
                     console.error('登录失败:', err)
-                    error_message.value = err.message || '登录失败，请检查凭证'
+                    error_message.value = "用户名或密码错误"
                 }
             })
+        }
+
+        const register = () => {
+            $.ajax({
+                url: "http://127.0.0.1:3000/user/account/register/",
+                type: "post",
+                data: {
+                    username: registerForm.username,
+                    password: registerForm.password,
+                    confirmedPassword: registerForm.confirmedPassword,
+                },
+                success(resp) {
+                    if(resp.error_message === "success"){
+                        location.reload();
+                    } else {
+                        error_message.value = resp.error_message   
+                    }
+                },
+                error(resp) {
+                    console.log(resp);
+                }
+            });
         }
 
         // 计算属性
@@ -101,44 +153,15 @@ export default {
         const toggleForm = () => {
             isLoginForm.value = !isLoginForm.value
             error_message.value = ''
-        }
-
-        const validateRegister = () => {
-            if (registerForm.password !== registerForm.repassword) {
-                error_message.value = '两次密码不一致！'
-                return false
-            }
-
-            if (userAccounts.value.some(user => user.username === registerForm.username)) {
-                error_message.value = '该用户已存在！'
-                return false
-            }
-
-            return true
-        }
-
-        const handleRegister = () => {
-            if (!validateRegister()) return
-
-            userAccounts.value.push({
-                username: registerForm.username,
-                password: registerForm.password
-            })
-
-            localStorage.setItem('userAccounts', JSON.stringify(userAccounts.value))
-            toggleForm()
-            resetRegisterForm()
-        }
-
-        const resetRegisterForm = () => {
-            Object.assign(registerForm, {
-                username: '',
-                password: '',
-                repassword: ''
-            })
+            loginForm.username = ''
+            loginForm.password = ''
+            registerForm.username = ''
+            registerForm.password = ''
+            registerForm.confirmedPassword = ''
         }
 
         // 气泡动画
+        /** 
         const initBubbles = () => {
             const createBubble = () => {
                 const bubble = document.createElement('span')
@@ -160,7 +183,7 @@ export default {
         // 生命周期钩子
         onMounted(initBubbles)
         onBeforeUnmount(() => clearInterval(bubbleInterval.value))
-
+        **/
         return {
             isLoginForm,
             loginForm,
@@ -169,8 +192,8 @@ export default {
             preBoxStyles,
             currentImage,
             toggleForm,
-            handleRegister,
             login,
+            register,
         }
     }
 }
@@ -266,6 +289,8 @@ body {
     color: white;
     text-shadow: 4px 4px 3px rgba(0, 0, 0, .1);
 }
+
+
 
 /* 图片盒子 */
 .img-box {
@@ -385,5 +410,16 @@ button:hover {
 .btn-box p:hover {
     cursor: pointer;
     border-bottom: 1px solid white;
+}
+
+.error-message {
+    color: #ff4444;
+    /* 红色文本 */
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+    word-break: break-all;
 }
 </style>
