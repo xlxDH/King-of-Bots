@@ -66,10 +66,7 @@ export class Snake extends GameObject{
             this.cells[i] = JSON.parse(JSON.stringify(this.cells[i-1]));
         }
 
-        if (!this.gamemap.check_vaild(this.next_cell)){ // 下一步操作非法
-            this.status = "die";
-        }
-    }
+   }
 
     update_move() {
         const dx = this.next_cell.x - this.cells[0].x;
