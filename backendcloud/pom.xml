@@ -10,6 +10,7 @@
     <modules>
         <module>machingsystem</module>
         <module>backend</module>
+        <module>botrunningsystem</module>
     </modules>
     <packaging>pom</packaging>
 

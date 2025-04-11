@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c16b0b25-67d0-41d9-8b5b-e148f2324e22" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../backendcloud/botrunningsystem/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backendcloud/backend/src/main/java/com/kob/backend/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backendcloud/backend/src/main/java/com/kob/backend/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backendcloud/backend/src/main/java/com/kob/backend/consumer/WebSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backendcloud/backend/src/main/java/com/kob/backend/consumer/WebSocketServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backendcloud/backend/src/main/java/com/kob/backend/consumer/utils/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backendcloud/backend/src/main/java/com/kob/backend/consumer/utils/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backendcloud/backend/src/main/java/com/kob/backend/consumer/utils/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backendcloud/backend/src/main/java/com/kob/backend/consumer/utils/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backendcloud/backend/src/main/java/com/kob/backend/controller/pk/StartGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backendcloud/backend/src/main/java/com/kob/backend/controller/pk/StartGameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backendcloud/backend/src/main/java/com/kob/backend/service/impl/pk/StartGameServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backendcloud/backend/src/main/java/com/kob/backend/service/impl/pk/StartGameServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backendcloud/backend/src/main/java/com/kob/backend/service/impl/user/account/RegisterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backendcloud/backend/src/main/java/com/kob/backend/service/impl/user/account/RegisterServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backendcloud/backend/src/main/java/com/kob/backend/service/pk/StartGameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backendcloud/backend/src/main/java/com/kob/backend/service/pk/StartGameService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backendcloud/machingsystem/src/main/java/com/kob/matchingsystem/controller/MatchingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backendcloud/machingsystem/src/main/java/com/kob/matchingsystem/controller/MatchingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backendcloud/machingsystem/src/main/java/com/kob/matchingsystem/service/MatchingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backendcloud/machingsystem/src/main/java/com/kob/matchingsystem/service/MatchingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backendcloud/machingsystem/src/main/java/com/kob/matchingsystem/service/impl/MatchingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backendcloud/machingsystem/src/main/java/com/kob/matchingsystem/service/impl/MatchingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backendcloud/machingsystem/src/main/java/com/kob/matchingsystem/service/impl/utils/MatchingPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backendcloud/machingsystem/src/main/java/com/kob/matchingsystem/service/impl/utils/MatchingPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backendcloud/machingsystem/src/main/java/com/kob/matchingsystem/service/impl/utils/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backendcloud/machingsystem/src/main/java/com/kob/matchingsystem/service/impl/utils/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backendcloud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backendcloud/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/src/components/MatchGround.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/components/MatchGround.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="D:\MyDrivers\apache-maven-3.9.9" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="userSettingsFile" value="D:\MyDrivers\apache-maven-3.9.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2tzYiZXYBwxr0ax3gPdJMUdq0Mx" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.BackendApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BackendApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/MyCourse/Lab/estore/backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql_aurora&quot;,
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MyCourse\SpringBot\King_of_Bots\backend\src\main\resources\templates.pk" />
+      <recent name="D:\MyCourse\SpringBot\King_of_Bots\backend\src\main\resources\static\templates\pk" />
+      <recent name="D:\MyCourse\SpringBot\King_of_Bots\backend\src\main\resources\static\templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BackendApplication">
+    <configuration name="BackendApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kob.backend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kob.backend" />
+      <option name="MAIN_CLASS_NAME" value="com.kob.backend.BackendApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kob.backend.BackendApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kob.backend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.BackendApplication" />
+        <item itemvalue="JUnit.BackendApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c16b0b25-67d0-41d9-8b5b-e148f2324e22" name="Changes" comment="" />
+      <created>1741356498635</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741356498635</updated>
+      <workItem from="1741356499621" duration="1485000" />
+      <workItem from="1741397986369" duration="8837000" />
+      <workItem from="1741501189194" duration="2912000" />
+      <workItem from="1741504279643" duration="1183000" />
+      <workItem from="1741505479908" duration="5651000" />
+      <workItem from="1741527615129" duration="2787000" />
+      <workItem from="1741530734011" duration="32000" />
+      <workItem from="1741530787850" duration="829000" />
+      <workItem from="1741531631279" duration="818000" />
+      <workItem from="1741532462652" duration="13993000" />
+      <workItem from="1741577917528" duration="1285000" />
+      <workItem from="1741584678547" duration="276000" />
+      <workItem from="1741584970540" duration="1542000" />
+      <workItem from="1741587813003" duration="2807000" />
+      <workItem from="1741591518930" duration="356000" />
+      <workItem from="1741594312660" duration="3725000" />
+      <workItem from="1741598201546" duration="377000" />
+      <workItem from="1741598591355" duration="328000" />
+      <workItem from="1741598934857" duration="630000" />
+      <workItem from="1741599627621" duration="132000" />
+      <workItem from="1741599925619" duration="18002000" />
+      <workItem from="1741660098232" duration="4265000" />
+      <workItem from="1741679370996" duration="5520000" />
+      <workItem from="1741703330216" duration="3212000" />
+      <workItem from="1741744629058" duration="18000" />
+      <workItem from="1741748774436" duration="149000" />
+      <workItem from="1741749089051" duration="839000" />
+      <workItem from="1741750118514" duration="16000" />
+      <workItem from="1741769505973" duration="3710000" />
+      <workItem from="1741910858157" duration="3148000" />
+      <workItem from="1742190812988" duration="12000" />
+      <workItem from="1742193242751" duration="41000" />
+      <workItem from="1742195192608" duration="1632000" />
+      <workItem from="1742206192849" duration="1283000" />
+      <workItem from="1742346584522" duration="250000" />
+      <workItem from="1742347100473" duration="15000" />
+      <workItem from="1742365569634" duration="150000" />
+      <workItem from="1742365773896" duration="5170000" />
+      <workItem from="1742458811979" duration="7072000" />
+      <workItem from="1742516475879" duration="223000" />
+      <workItem from="1742622154279" duration="25589000" />
+      <workItem from="1742796552986" duration="23000" />
+      <workItem from="1742796685692" duration="23000" />
+      <workItem from="1742798270356" duration="130000" />
+      <workItem from="1742798620823" duration="33000" />
+      <workItem from="1742882006647" duration="133000" />
+      <workItem from="1742958358540" duration="19000" />
+      <workItem from="1743061908026" duration="21359000" />
+      <workItem from="1743325305603" duration="37000" />
+      <workItem from="1744011080616" duration="604000" />
+      <workItem from="1744120763226" duration="2477000" />
+      <workItem from="1744183312326" duration="3544000" />
+      <workItem from="1744275691612" duration="812000" />
+      <workItem from="1744276562214" duration="84000" />
+      <workItem from="1744278200678" duration="27000" />
+      <workItem from="1744278297149" duration="12000" />
+      <workItem from="1744279137117" duration="698000" />
+      <workItem from="1744337273490" duration="12000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

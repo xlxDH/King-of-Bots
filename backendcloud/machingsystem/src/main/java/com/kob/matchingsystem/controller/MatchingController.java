@@ -18,7 +18,8 @@ public class MatchingController {
     public String addPlayer(@RequestParam MultiValueMap<String, String> map) {
         Integer userId = Integer.parseInt(Objects.requireNonNull(map.getFirst("user_id")));
         Integer rating = Integer.parseInt(Objects.requireNonNull(map.getFirst("rating")));
-        return marchingService.addPlayer(userId, rating);
+        Integer botId = Integer.parseInt(Objects.requireNonNull(map.getFirst("bot_id")));
+        return marchingService.addPlayer(userId, rating,botId);
     }
 
     @PostMapping("/player/remove/")
