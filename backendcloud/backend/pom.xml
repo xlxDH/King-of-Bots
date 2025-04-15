@@ -35,6 +35,11 @@
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>3.5.10.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-jsqlparser-4.9</artifactId>
+            <version>3.5.9</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-generator -->
         <dependency>
             <groupId>com.baomidou</groupId>

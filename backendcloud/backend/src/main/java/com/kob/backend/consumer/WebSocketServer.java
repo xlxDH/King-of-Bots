@@ -33,7 +33,7 @@ public class WebSocketServer {
 
     final public static ConcurrentHashMap<Integer,WebSocketServer> users = new ConcurrentHashMap<>();
 
-    private static UserMapper userMapper;
+    public static UserMapper userMapper;
     public static RecordMapper recordMapper;
     public static RestTemplate restTemplate = new RestTemplate();
     private static BotMapper botMapper;

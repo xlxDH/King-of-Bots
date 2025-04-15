@@ -133,7 +133,8 @@ export class Snake extends GameObject{
                 ctx.fillRect(Math.min(a.x,b.x)*L,(a.y-0.5 +(1-size)/2)*L,Math.abs(a.x-b.x)*L,L*size);
             }
         }
-
+        
+        // 画眼睛
         ctx.fillStyle = "white";
         for(let i=0;i<2;i++){
             const eye_x = (this.cells[0].x+this.eye_dx[this.eye_direction][i]*0.2)*L;
@@ -150,5 +151,25 @@ export class Snake extends GameObject{
             ctx.arc(eye_x,eye_y,L*size*0.1,0,Math.PI*2);
             ctx.fill()
         }
+
+
+
+        //画标记
+        if (this.id == this.gamemap.currentPlayerId) {
+            ctx.fillStyle = "#E6F324";
+            const head = this.cells[0];
+            const triangleSize = L * 0.2; // 倒三角的大小
+            const triangleBottomY = head.y * L + triangleSize;
+            const triangleLeftX = head.x * L - triangleSize / 2;
+            const triangleRightX = head.x * L + triangleSize / 2;
+        
+            ctx.beginPath();
+            ctx.moveTo(head.x * L, triangleBottomY); // 移动到下方顶点
+            ctx.lineTo(triangleLeftX, triangleBottomY - triangleSize); // 连接到左上角
+            ctx.lineTo(triangleRightX, triangleBottomY - triangleSize); // 连接到右上角
+            ctx.closePath();
+            ctx.fill();
+        }
+        
     }
 }
